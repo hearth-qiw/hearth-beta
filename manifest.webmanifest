@@ -1,0 +1,25 @@
+{
+  "name": "Hearth",
+  "short_name": "Hearth",
+  "description": "A warm, quiet place for faith in everyday life. Beta.",
+  "start_url": "/hearth-beta/",
+  "scope": "/hearth-beta/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ece5d8",
+  "theme_color": "#ece5d8",
+  "icons": [
+    {
+      "src": "/hearth-beta/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/hearth-beta/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
