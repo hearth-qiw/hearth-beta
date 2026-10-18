@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-    <!-- maximum-scale=1: iOS Safari otherwise zooms in when a text field under 16px is tapped -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
+    <!-- Pinch-zoom stays ON (WCAG 1.4.4): no maximum-scale and no user-scalable=no. The reason it used to be off, iOS Safari zooming in when a
+         text field under 16px is tapped, is handled by the rule on input and textarea below, and the audit fails on any field under 16px. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- iPhone "Add to Home Screen": Hearth's icon, and it opens full screen like an installed app -->
     <link rel="apple-touch-icon" href="/hearth-beta/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -35,6 +36,13 @@
         flex: 1;
       }
     </style>
+    <style id="hearth-web">
+      /* iOS Safari zooms the page when a text field under 16px gets focus. Fields are 15px in the app; on the web they are 16px, so a tap never zooms. */
+      input,
+      textarea {
+        font-size: 16px !important;
+      }
+    </style>
   <link rel="icon" href="/hearth-beta/favicon.ico"/></head>
 
   <body>
@@ -43,6 +51,6 @@
     </noscript>
     <!-- The root element for your Expo app. -->
     <div id="root"></div>
-  <script src="/hearth-beta/_expo/static/js/web/entry-afa7ebf728958cfdaaabf7f874f3f0b1.js" defer></script>
+  <script src="/hearth-beta/_expo/static/js/web/entry-7deed92d7a4d1de9d3e3747c6666124c.js" defer></script>
 </body>
 </html>

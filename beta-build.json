@@ -1,10 +1,10 @@
 {
   "app": "Hearth",
   "version": "2.0.0",
-  "commit": "e32b399",
+  "commit": "96177af",
   "branch": "v2-build",
   "dirty": false,
-  "builtAt": "2026-10-16T20:16:59.582Z",
+  "builtAt": "2026-10-18T19:17:42.769Z",
   "backend": "hearth-dev",
   "path": "/hearth-beta"
 }
